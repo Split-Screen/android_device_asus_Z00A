@@ -5,10 +5,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Inherit some common PAC stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, vendor/pac/config/common_full_phone.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/asus/Z00A/device.mk)
+
+$(call inherit-product, vendor/pac/config/common_full_phone.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/pac/config/nfc_enhanced.mk)
